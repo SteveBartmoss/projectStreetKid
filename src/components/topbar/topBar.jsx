@@ -6,14 +6,14 @@ export function TopBar(){
     return(
         <div className="top-bar">
             <div className='row'>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink className="nav-link" to={"/"}>Inicio</NavLink>
             </div>
             <div className='row'>
-                <div>
-                    <NavLink to={"/projects"}>Proyectos</NavLink>
+                <div className='row'>
+                    <NavLink className="nav-link" to={"/projects"}>Proyectos</NavLink>
                 </div>
-                <div>
-                    <NavLink to={"/steve"}>Steve</NavLink>
+                <div className='row'>
+                    <NavLink className="nav-link" to={"/steve"}>Steve</NavLink>
                 </div>
             </div>
         </div>
