@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Card } from "../components/card/card";
+import { Box } from "../components/containers/containers";
 
 
 export function Projects(){
@@ -9,7 +10,14 @@ export function Projects(){
             <div>
                 <h1>Proyectos actuales</h1>
             </div>
-            <div>
+            <Box styles={{
+                display: "flex",
+                flexDirection: "row",
+                maxWidth: "70%",
+                margin: "auto",
+                justifyContent: "center",
+                alignItems: "center"
+            }}>
                 <Card>
                     <h1>Racoon</h1>
                     <p>
@@ -18,7 +26,7 @@ export function Projects(){
 
                     <NavLink to={"/raccoon"}>Leer mas</NavLink>
                 </Card>
-            </div>
+            </Box>
         </div>
     )
 
