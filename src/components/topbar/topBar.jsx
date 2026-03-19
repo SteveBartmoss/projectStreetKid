@@ -6,7 +6,7 @@ export function TopBar(){
     return(
         <div className="top-bar">
             <div className='row'>
-                <NavLink className="nav-link" to={"/"}>Inicio</NavLink>
+                <NavLink className="nav-link" to={"/"}>Steve Bartmoss</NavLink>
             </div>
             <div className='row'>
                 <div className='row'>
