@@ -1,33 +1,43 @@
 import { NavLink } from "react-router-dom";
-import { Card } from "../components/card/card";
-import { Box } from "../components/containers/containers";
+import "./projects.css";
 
+export function Projects() {
+    return (
+        <section className="projects">
 
-export function Projects(){
-
-    return(
-        <div>
-            <div>
-                <h1>Proyectos actuales</h1>
+            <div className="projects-header">
+                <h1>Proyectos</h1>
+                <p>
+                    Algunos de los proyectos en los que he trabajado,
+                    enfocados en herramientas y sistemas.
+                </p>
             </div>
-            <Box styles={{
-                display: "flex",
-                flexDirection: "row",
-                maxWidth: "70%",
-                margin: "auto",
-                justifyContent: "center",
-                alignItems: "center"
-            }}>
-                <Card>
-                    <h1>Racoon</h1>
-                    <p>
-                        Cliente Rest ligero y nativo
+
+            <div className="projects-grid">
+
+                <div className="project-card">
+                    <h2>Raccoon</h2>
+
+                    <p className="project-description">
+                        Cliente REST nativo enfocado en velocidad y simplicidad,
+                        construido con React y Tauri.
                     </p>
 
-                    <NavLink to={"/raccoon"}>Leer mas</NavLink>
-                </Card>
-            </Box>
-        </div>
-    )
+                    <div className="project-features">
+                        <span>⚡ Native HTTP</span>
+                        <span>🧠 State management</span>
+                        <span>🪶 Lightweight UI</span>
+                    </div>
 
+                    <NavLink className="project-link" to={"/raccoon"}>
+                        Ver más →
+                    </NavLink>
+                </div>
+
+                {/* Aquí puedes agregar más proyectos */}
+
+            </div>
+
+        </section>
+    )
 }
