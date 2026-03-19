@@ -1,22 +1,39 @@
 import { NavLink } from 'react-router-dom'
 import './topbar.css'
 
-export function TopBar(){
+export function TopBar() {
 
-    return(
-        <div className="top-bar">
-            <div className='row'>
-                <NavLink className="nav-link" to={"/"}>Steve Bartmoss</NavLink>
+    return (
+        <header className="topbar">
+
+            <div className="topbar-container">
+
+                <NavLink to="/" className="logo">
+                    Steve Bartmoss
+                </NavLink>
+
+                <nav className="nav">
+                    <NavLink 
+                        to="/projects" 
+                        className={({ isActive }) => 
+                            isActive ? "nav-link active" : "nav-link"
+                        }
+                    >
+                        Proyectos
+                    </NavLink>
+
+                    <a 
+                        href="https://github.com/SteveBartmoss" 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="nav-button"
+                    >
+                        GitHub
+                    </a>
+                </nav>
+
             </div>
-            <div className='row'>
-                <div className='row'>
-                    <NavLink className="nav-link" to={"/projects"}>Proyectos</NavLink>
-                </div>
-                <div className='row'>
-                    <NavLink className="nav-link" to={"/steve"}>Steve</NavLink>
-                </div>
-            </div>
-        </div>
+
+        </header>
     )
-
 }
