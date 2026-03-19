@@ -1,26 +1,39 @@
+import './home.css'
 
+export function Home() {
+    return (
+        <section className="hero">
 
-export function Home(){
+            <div className="hero-content">
 
-    return(
-        
-        <section className="flex flex-col items-center justify-center text-center px-6 py-24">
-        <h2 className="text-4xl md:text-6xl font-bold mb-6">
-          Hola, soy Marco 👋
-        </h2>
-        <p className="text-gray-400 max-w-xl text-lg mb-8">
-          Desarrollador enfocado en crear herramientas como clientes REST,
-          editores y librerías desde cero.
-        </p>
-        <div className="flex gap-4">
-          <button className="bg-white text-black px-6 py-2 rounded-xl font-semibold">
-            Ver proyectos
-          </button>
-          <button className="border border-gray-600 px-6 py-2 rounded-xl">
-            GitHub
-          </button>
-        </div>
-      </section>
+                <span className="badge">🚀 Open Source & Tools</span>
+
+                <h1>
+                    Hola, soy <span className="highlight">Marco</span> 👋
+                </h1>
+
+                <h2 className="subtitle">
+                    Construyo herramientas como <span>clientes REST</span>, editores
+                    y librerías desde cero.
+                </h2>
+
+                <p className="description">
+                    Me enfoco en entender cómo funcionan las cosas internamente
+                    y desarrollar soluciones eficientes, ligeras y bien diseñadas.
+                </p>
+
+                <div className="actions">
+                    <button className="btn-primary">
+                        Ver proyectos
+                    </button>
+
+                    <button className="btn-secondary">
+                        GitHub
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
     )
-
 }
