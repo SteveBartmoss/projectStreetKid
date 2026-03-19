@@ -1,64 +1,121 @@
 import raccoonImg from '../assets/raccoon.png'
+import './raccoon.css'
 
-export function Raccoon(){
+export function Raccoon() {
 
-    return(
-        <div>
-            <div>
-                <h1>Raccoon</h1>
-            </div>
-            <div>
-                <h2>v 0.1.0 pre-release</h2>
+    return (
+        <div className="raccoon-container">
 
-                <h2>Cliente Rest ligero</h2>
+            <section className="hero">
+                <div className="hero-text">
+                    <h1>Raccoon</h1>
+                    <p className="version">v0.1.0 pre-release</p>
 
-                <p>
-                    Un cliente ligero y nativo, que permite probar apis rest de forma simple y ademas 
-                    es una alternativa gnu.
-                </p>
+                    <h2>Cliente REST ligero y nativo</h2>
 
-                <img src={raccoonImg} />
+                    <p className="description">
+                        Una alternativa GNU simple para probar APIs REST.
+                        Rápido, ligero y enfocado en lo esencial.
+                    </p>
 
-                <h2>Featurues</h2>
+                    <a
+                        href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.1.0'
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn-primary"
+                    >
+                        Descargar
+                    </a>
+                </div>
 
-                <ul>
-                    <li>Fast native HTTP requests</li>
-                    <li>Status, response time and size</li>
-                    <li>JSON viewer</li>
-                    <li>Minimal UI</li>
-                </ul>
+                <div className="hero-image">
+                    <img src={raccoonImg} alt="Raccoon App" />
+                </div>
+            </section>
 
+            {/* FEATURES */}
+            <section className="section">
+                <h2>Features</h2>
+                <div className="grid">
+                    <div className="card">⚡ Fast native HTTP requests</div>
+                    <div className="card">📊 Status, response time and size</div>
+                    <div className="card">🧾 JSON viewer</div>
+                    <div className="card">🎯 Minimal UI</div>
+                </div>
+            </section>
+
+            {/* TECH STACK */}
+            <section className="section">
                 <h2>Tech stack</h2>
+                <div className="tags">
+                    <span>React</span>
+                    <span>Rust</span>
+                    <span>Tauri</span>
+                    <span>Reqwest</span>
+                </div>
+            </section>
 
-                <ul>
-                    <li>React</li>
-                    <li>Rust</li>
-                    <li>Tauri</li>
-                    <li>Reqwest</li>
-                </ul>
+            <section className="section">
+                <h2>Roadmap</h2>
 
-                <h2>RoadMap</h2>
+                <div className="grid">
+                    <div className="card">
+                        🎨 Mejoras UI
+                        <p className="card-sub">Refinamiento visual y UX</p>
+                    </div>
 
-                <ul>
-                    <li>Mejoras UI</li>
-                    <li>Sistemas de ventanas</li>
-                    <li>Configuracion de Auth</li>
-                    <li>Configuracion de parametros</li>
-                    <li>Historial de peticiones</li>
-                </ul>
+                    <div className="card">
+                        🪟 Sistema de ventanas
+                        <p className="card-sub">Multi-tabs y manejo de vistas</p>
+                    </div>
 
+                    <div className="card">
+                        🔐 Auth
+                        <p className="card-sub">Soporte para tokens y headers</p>
+                    </div>
+
+                    <div className="card">
+                        ⚙️ Parámetros dinámicos
+                        <p className="card-sub">Gestión avanzada de requests</p>
+                    </div>
+
+                    <div className="card">
+                        📜 Historial
+                        <p className="card-sub">Registro de peticiones</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section">
                 <h2>Download</h2>
 
-                <p>
-                    Por ahora las plataformas soportadas para la beta son las siguientes
-                </p>
+                <div className="grid">
+                    <div className="card">
+                        🐧 Linux
+                        <p className="card-sub">Disponible en pre-release</p>
 
-                <ul>
-                    <li>Linux</li>
-                </ul>
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.1.0"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn-secondary"
+                        >
+                            Descargar
+                        </a>
+                    </div>
 
-                <p>Descarga el pre-realse <a href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.1.0' rel="noreferrer" target="_blank" >aqui</a></p>
-            </div>
+                    <div className="card disabled">
+                        🪟 Windows
+                        <p className="card-sub">Próximamente</p>
+                    </div>
+
+                    <div className="card disabled">
+                        🍎 macOS
+                        <p className="card-sub">Próximamente</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 
