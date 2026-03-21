@@ -9,7 +9,7 @@ export function Home() {
                 <span className="badge">🚀 Open Source & Tools</span>
 
                 <h1>
-                    Hola, soy <span className="highlight">Marco</span> 👋
+                    Hola, soy <span className="highlight">Steve</span> 👋
                 </h1>
 
                 <h2 className="subtitle">
