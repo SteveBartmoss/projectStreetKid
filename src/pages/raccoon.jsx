@@ -44,7 +44,6 @@ export function Raccoon() {
                 </div>
             </section>
 
-            {/* TECH STACK */}
             <section className="section">
                 <h2>Tech stack</h2>
                 <div className="tags">
@@ -114,6 +113,63 @@ export function Raccoon() {
                         <p className="card-sub">Próximamente</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="install">
+
+                <h2>Instalación en Linux</h2>
+
+                <div className="install-grid">
+
+                    <div className="install-card">
+
+                        <h3>🐧 Debian / Ubuntu</h3>
+
+                        <p className="install-description">
+                            Descarga el paquete <strong>.deb</strong> e instálalo con el siguiente comando:
+                        </p>
+
+                        <div className="code-block">
+                            sudo dpkg -i racoon_0.1.0_amd64.deb
+                        </div>
+
+                        <p className="install-note">
+                            Si hay errores de dependencias:
+                        </p>
+
+                        <div className="code-block">
+                            sudo apt install -f
+                        </div>
+
+                    </div>
+
+                    <div className="install-card">
+
+                        <h3>📦 Otras distribuciones</h3>
+
+                        <p className="install-description">
+                            Usa el archivo <strong>AppImage</strong> (portable, sin instalación).
+                        </p>
+
+                        <ol className="steps">
+                            <li>Descarga el archivo .AppImage</li>
+                            <li>Hazlo ejecutable:</li>
+                        </ol>
+
+                        <div className="code-block">
+                            chmod +x racoon_0.1.0_amd64.AppImage
+                        </div>
+
+                        <p className="install-note">Ejecuta la aplicación:</p>
+
+                        <div className="code-block">
+                            ./racoon_0.1.0_amd64.AppImage
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
 
         </div>
