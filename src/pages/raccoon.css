@@ -46,7 +46,7 @@
 }
 
 .hero-image img {
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 12px;
 }
 
@@ -137,4 +137,62 @@
 
 .card.disabled {
     opacity: 0.4;
+}
+
+.install {
+    margin-top: 4rem;
+}
+
+.install h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.install-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.install-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: 0.2s;
+}
+
+.install-card:hover {
+    border-color: #444;
+}
+
+.install-description {
+    color: #aaa;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.install-note {
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.steps {
+    color: #aaa;
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+}
+
+.code-block {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    overflow-x: auto;
 }
