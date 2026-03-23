@@ -172,6 +172,45 @@ export function Raccoon() {
 
             </section>
 
+            <section className="changelog">
+
+                <h2>Changelog</h2>
+
+                <div className="changelog-list">
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
+                            <span className="version-badge">v0.9.0</span>
+                            <span className="version-date">Latest</span>
+                        </div>
+
+                        <p className="changelog-description">
+                            Mejoras importantes en funcionalidades del cliente y experiencia de usuario.
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>⚙️ Soporte para parámetros dinámicos</li>
+                            <li>🔐 Soporte para autenticación por token</li>
+                            <li>🪟 Manejo de múltiples tabs</li>
+                            <li>🎨 Mejoras en la interfaz</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
     )
 
