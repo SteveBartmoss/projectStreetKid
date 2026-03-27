@@ -53,8 +53,8 @@
 /* BUTTON */
 .btn-primary {
     display: inline-block;
-    background: white;
-    color: black;
+    background: #3182ce;
+    color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 10px;
     text-decoration: none;
