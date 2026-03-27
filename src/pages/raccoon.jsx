@@ -94,7 +94,7 @@ export function Raccoon() {
                         <p className="card-sub">Disponible en pre-release</p>
 
                         <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.1.0"
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                             target="_blank"
                             rel="noreferrer"
                             className="btn-secondary"
@@ -103,14 +103,32 @@ export function Raccoon() {
                         </a>
                     </div>
 
-                    <div className="card disabled">
+                    <div className="card">
                         🪟 Windows
-                        <p className="card-sub">Próximamente</p>
+                        <p className="card-sub">Disponible en pre-release</p>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn-secondary"
+                        >
+                            Descargar
+                        </a>
                     </div>
 
-                    <div className="card disabled">
+                    <div className="card">
                         🍎 macOS
-                        <p className="card-sub">Próximamente</p>
+                        <p className="card-sub">Disponible en pre-release</p>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn-secondary"
+                        >
+                            Descargar
+                        </a>
                     </div>
                 </div>
             </section>
@@ -177,6 +195,35 @@ export function Raccoon() {
                 <h2>Changelog</h2>
 
                 <div className="changelog-list">
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
+                            <span className="version-badge">v0.13.2</span>
+                            <span className="version-date">Latest</span>
+                        </div>
+
+                        <p className="changelog-description">
+                            Mejoras visuales en funcionalidades del cliente y experiencia de usuario.
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>🎨 Colores en estatus de la respuesta</li>
+                            <li>🎨 Colores en los encabezados de la tab</li>
+                            <li>🪟 Mejor acomodo en los elementos visuales de la aplicacion</li>
+                            <li>⚙️ Archivos para la aplicacion en windows y macos</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
 
                     <div className="changelog-item">
 
