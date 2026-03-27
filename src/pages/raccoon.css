@@ -236,8 +236,8 @@
 
 /* VERSION BADGE */
 .version-badge {
-    background: #fff;
-    color: #000;
+    background: #3182ce;
+    color: white;
     font-size: 0.75rem;
     font-weight: bold;
     padding: 0.3rem 0.6rem;
