@@ -34,6 +34,25 @@ export function Projects() {
                     </NavLink>
                 </div>
 
+                <div className="project-card">
+                    <h2>Neofetch</h2>
+
+                    <p className="project-description">
+                        Cliente HTTP ligero basado en Fetch API con interceptors, 
+                        timeout control y manejo consistente de errores. 
+                    </p>
+
+                    <div className="project-features">
+                        <span>⚡ Wrapper</span>
+                        <span>🧠 Configuracion simple</span>
+                        <span>🪶 Uso ligero</span>
+                    </div>
+
+                    <NavLink className="project-link" to={"/neofetch"}>
+                        Ver más →
+                    </NavLink>
+                </div>
+
                 {/* Aquí puedes agregar más proyectos */}
 
             </div>
