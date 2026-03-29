@@ -9,7 +9,7 @@ export function Raccoon() {
             <section className="hero">
                 <div className="hero-text">
                     <h1>Raccoon</h1>
-                    <p className="version">v0.1.0 pre-release</p>
+                    <p className="version">v0.13.2 pre-release</p>
 
                     <h2>Cliente REST ligero y nativo</h2>
 
