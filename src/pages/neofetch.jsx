@@ -1,4 +1,3 @@
-import raccoonImg from '../assets/raccoon.png'
 import './neofetch.css'
 
 export function NeoFetch() {
@@ -30,7 +29,9 @@ export function NeoFetch() {
                 </div>
 
                 <div className="hero-image">
-                    <img src={raccoonImg} alt="Raccoon App" />
+                    <pre>
+                        Neofetch.get(url,options)
+                    </pre>
                 </div>
             </section>
 
@@ -97,102 +98,53 @@ export function NeoFetch() {
             </section>
 
             <section className="section">
-                <h2>Download</h2>
+                <h2>Plataformas</h2>
 
                 <div className="grid">
                     <div className="card">
-                        🐧 Linux
+                        npm
                         <p className="card-sub">Disponible en pre-release</p>
 
                         <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                            href="https://www.npmjs.com/package/@stevebartmoss/neofetch"
                             target="_blank"
                             rel="noreferrer"
                             className="btn-secondary"
                         >
-                            Descargar
+                            Visitar
                         </a>
                     </div>
 
-                    <div className="card">
-                        🪟 Windows
-                        <p className="card-sub">Disponible en pre-release</p>
+                    <div className="card disabled">
+                        yarm
+                        <p className="card-sub">Próximamente</p>
 
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-secondary"
-                        >
-                            Descargar
-                        </a>
                     </div>
 
-                    <div className="card">
-                        🍎 macOS
-                        <p className="card-sub">Disponible en pre-release</p>
+                    <div className="card disabled">
+                        pnmp
+                        <p className="card-sub">Próximamente</p>
 
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-secondary"
-                        >
-                            Descargar
-                        </a>
                     </div>
                 </div>
             </section>
 
             <section className="install">
 
-                <h2>Instalación en Linux</h2>
+                <h2>Instalación</h2>
 
                 <div className="install-grid">
 
                     <div className="install-card">
 
-                        <h3>🐧 Debian / Ubuntu</h3>
+                        <h3>npm</h3>
 
                         <p className="install-description">
-                            Descarga el paquete <strong>.deb</strong> e instálalo con el siguiente comando:
+                            Instala el paquete de <strong>npm</strong> e instálalo con el siguiente comando:
                         </p>
 
                         <div className="code-block">
-                            sudo dpkg -i racoon_0.1.0_amd64.deb
-                        </div>
-
-                        <p className="install-note">
-                            Si hay errores de dependencias:
-                        </p>
-
-                        <div className="code-block">
-                            sudo apt install -f
-                        </div>
-
-                    </div>
-
-                    <div className="install-card">
-
-                        <h3>📦 Otras distribuciones</h3>
-
-                        <p className="install-description">
-                            Usa el archivo <strong>AppImage</strong> (portable, sin instalación).
-                        </p>
-
-                        <ol className="steps">
-                            <li>Descarga el archivo .AppImage</li>
-                            <li>Hazlo ejecutable:</li>
-                        </ol>
-
-                        <div className="code-block">
-                            chmod +x racoon_0.1.0_amd64.AppImage
-                        </div>
-
-                        <p className="install-note">Ejecuta la aplicación:</p>
-
-                        <div className="code-block">
-                            ./racoon_0.1.0_amd64.AppImage
+                            npm i @stevebartmoss/neofetch
                         </div>
 
                     </div>
@@ -210,52 +162,22 @@ export function NeoFetch() {
                     <div className="changelog-item">
 
                         <div className="changelog-header">
-                            <span className="version-badge">v0.13.2</span>
+                            <span className="version-badge">v1.2.3</span>
                             <span className="version-date">Latest</span>
                         </div>
 
                         <p className="changelog-description">
-                            Mejoras visuales en funcionalidades del cliente y experiencia de usuario.
+                            Mejoras para el uso de la libreria.
                         </p>
 
                         <ul className="changelog-features">
-                            <li>🎨 Colores en estatus de la respuesta</li>
-                            <li>🎨 Colores en los encabezados de la tab</li>
-                            <li>🪟 Mejor acomodo en los elementos visuales de la aplicacion</li>
-                            <li>⚙️ Archivos para la aplicacion en windows y macos</li>
+                            <li>⚙️ Parametros</li>
+                            <li>⚙️ Interceptores</li>
+                            <li>⚙️ Manejo de errores</li>
                         </ul>
 
                         <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v0.9.0</span>
-                            <span className="version-date">Latest</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras importantes en funcionalidades del cliente y experiencia de usuario.
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>⚙️ Soporte para parámetros dinámicos</li>
-                            <li>🔐 Soporte para autenticación por token</li>
-                            <li>🪟 Manejo de múltiples tabs</li>
-                            <li>🎨 Mejoras en la interfaz</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            href="https://www.npmjs.com/package/@stevebartmoss/neofetch"
                             target="_blank"
                             rel="noreferrer"
                             className="changelog-link"
