@@ -214,6 +214,34 @@ export function Raccoon() {
                     <div className="changelog-item">
 
                         <div className="changelog-header">
+                            <span className="version-badge">v1.7.0</span>
+                            <span className="version-date">Latest</span>
+                        </div>
+
+                        <p className="changelog-description">
+                            Mejoras internas para la aplicacion, se mejora el manejo de las tabs. Se dividio
+                            la informacion para las tabs y para las request.
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>🎨 Icono personalizado para la aplicacion</li>
+                            <li>🎨 Se removio por completo el scroll vertial y horizontal</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
                             <span className="version-badge">v1.0.0</span>
                             <span className="version-date">Latest</span>
                         </div>
