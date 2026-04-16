@@ -215,17 +215,19 @@ export function Raccoon() {
 
                         <div className="changelog-header">
                             <span className="version-badge">v1.7.0</span>
-                            <span className="version-date">Latest</span>
+                            <span className="version-date">pre-release</span>
                         </div>
 
                         <p className="changelog-description">
                             Mejoras internas para la aplicacion, se mejora el manejo de las tabs. Se dividio
-                            la informacion para las tabs y para las request.
+                            la informacion para las tabs y para las request, se implementa una mejora para 
+                            descargar la respuesta, se implementa una mejora para hacer los params opcionales.
                         </p>
 
                         <ul className="changelog-features">
-                            <li>🎨 Icono personalizado para la aplicacion</li>
-                            <li>🎨 Se removio por completo el scroll vertial y horizontal</li>
+                            <li>⚙️ Mejor soporte para al manejo de las tabs</li>
+                            <li>⚙️ Funcion para descargar la respuesta desde la aplicacion</li>
+                            <li>⚙️ Se implemento la funcion para hacer los params opcionales</li>
                         </ul>
 
                         <a
