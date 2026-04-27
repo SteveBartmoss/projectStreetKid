@@ -106,7 +106,7 @@ export function Raccoon() {
                 <div className="grid">
                     <div className="card">
                         🐧 Linux
-                        <p className="card-sub">Disponible en pre-release</p>
+                        <p className="card-sub">Disponible en Latest</p>
 
                         <a
                             href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
@@ -120,7 +120,7 @@ export function Raccoon() {
 
                     <div className="card">
                         🪟 Windows
-                        <p className="card-sub">Disponible en pre-release</p>
+                        <p className="card-sub">Disponible en Latest</p>
 
                         <a
                             href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
@@ -134,7 +134,7 @@ export function Raccoon() {
 
                     <div className="card">
                         🍎 macOS
-                        <p className="card-sub">Disponible en pre-release</p>
+                        <p className="card-sub">Disponible en Latest</p>
 
                         <a
                             href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
@@ -210,6 +210,39 @@ export function Raccoon() {
                 <h2>Changelog</h2>
 
                 <div className="changelog-list">
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
+                            <span className="version-badge">v1.10.0</span>
+                            <span className="version-date">pre-release</span>
+                        </div>
+
+                        <p className="changelog-description">
+                            Mejoras funcionalidades para la aplicacion, se implementa el manejo de headers, 
+                            se implementa el manejo de errores, se implementa un nuevo componenre para la 
+                            visualizacion de los errores, se mejora el acomo de la aplicacion
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>⚙️ Se pueden mandar los headers en la peticion</li>
+                            <li>⚙️ Deteccion de errores al momento de enviar la peticion</li>
+                            <li>⚙️ Nuevo componene para mostrar los errores</li>
+                            <li>🎨 Se mejora aun mas el scroll que tenia la aplicacion, se 
+                                trabaja con una plantilla mejor acomodada
+                            </li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
 
                     <div className="changelog-item">
 
