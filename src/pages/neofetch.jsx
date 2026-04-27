@@ -140,7 +140,7 @@ export function NeoFetch() {
                         <h3>npm</h3>
 
                         <p className="install-description">
-                            Instala el paquete de <strong>npm</strong> e instálalo con el siguiente comando:
+                            Descarga el paquete de <strong>npm</strong> e instálalo con el siguiente comando:
                         </p>
 
                         <div className="code-block">
