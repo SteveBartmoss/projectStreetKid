@@ -33,6 +33,82 @@ export function Raccoon() {
                 </div>
             </section>
 
+            <section className="hero">
+                <div className="hero-image">
+                    <img src={raccoonImg} alt="Raccoon App" />
+                </div>
+
+                <div className="hero-text">
+
+                    <h1>Private by Design</h1>
+
+                    <h2>Un cliente REST que respeta tu privacidad</h2>
+
+                    <p className="description">
+                        Raccoon funciona completamente de forma local.
+                        No requiere cuentas, servicios en la nube ni conexiones externas.
+                        Todas las peticiones, configuraciones y datos permanecen en tu máquina.
+
+                        Sin telemetría. Sin tracking. Sin dependencias innecesarias.
+                        Tú mantienes el control total de tu información.
+                    </p>
+
+                </div>
+            </section>
+
+            <section className="hero hero-reverse">
+
+                <div className="hero-text">
+
+                    <h1>De desarrollador</h1>
+
+                    <h2>Para desarrolladores</h2>
+
+                    <p className="description">
+                        Raccoon nace desde la experiencia real de desarrollo.
+                        No busca crear un ecosistema cerrado ni imponer flujos de trabajo.
+                        Su objetivo es integrarse naturalmente con tus herramientas,
+                        scripts y procesos existentes.
+                    </p>
+
+                    <p className="description secondary">
+                        Una herramienta abierta, extensible y pensada para quienes
+                        prefieren entender lo que usan en lugar de depender de
+                        software opaco.
+                    </p>
+
+                </div>
+
+                <div className="hero-image">
+                    <img src={raccoonImg} alt="Raccoon App" />
+                </div>
+
+            </section>
+
+            <section className="hero">
+
+                <div className="hero-image">
+                    <img src={raccoonImg} alt="Raccoon App" />
+                </div>
+
+                <div className="hero-text">
+
+                    <h1>Transparente</h1>
+
+                    <h2>Sin sorpresas</h2>
+
+                    <p className="description">
+                        El código fuente del proyecto está completamente disponible.
+                        Puedes inspeccionarlo, auditarlo e incluso modificarlo según
+                        tus necesidades. Sabes exactamente qué estás instalando:
+                        sin software innecesario, sin componentes ocultos y sin
+                        sorpresas desagradables.
+                    </p>
+
+                </div>
+
+            </section>
+
             {/* FEATURES */}
             <section className="section">
                 <h2>Features</h2>
@@ -219,8 +295,8 @@ export function Raccoon() {
                         </div>
 
                         <p className="changelog-description">
-                            Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana, 
-                            se puede guardar la informacion de una peticion a un json, se permite importar informacion 
+                            Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana,
+                            se puede guardar la informacion de una peticion a un json, se permite importar informacion
                             a una peticion desde un json, se corrigen los bugs de las tabs, se corrigen errores
                         </p>
 
@@ -253,8 +329,8 @@ export function Raccoon() {
                         </div>
 
                         <p className="changelog-description">
-                            Mejoras funcionalidades para la aplicacion, se implementa el manejo de headers, 
-                            se implementa el manejo de errores, se implementa un nuevo componenre para la 
+                            Mejoras funcionalidades para la aplicacion, se implementa el manejo de headers,
+                            se implementa el manejo de errores, se implementa un nuevo componenre para la
                             visualizacion de los errores, se mejora el acomo de la aplicacion
                         </p>
 
@@ -262,7 +338,7 @@ export function Raccoon() {
                             <li>⚙️ Se pueden mandar los headers en la peticion</li>
                             <li>⚙️ Deteccion de errores al momento de enviar la peticion</li>
                             <li>⚙️ Nuevo componene para mostrar los errores</li>
-                            <li>🎨 Se mejora aun mas el scroll que tenia la aplicacion, se 
+                            <li>🎨 Se mejora aun mas el scroll que tenia la aplicacion, se
                                 trabaja con una plantilla mejor acomodada
                             </li>
                         </ul>
@@ -287,7 +363,7 @@ export function Raccoon() {
 
                         <p className="changelog-description">
                             Mejoras internas para la aplicacion, se mejora el manejo de las tabs. Se dividio
-                            la informacion para las tabs y para las request, se implementa una mejora para 
+                            la informacion para las tabs y para las request, se implementa una mejora para
                             descargar la respuesta, se implementa una mejora para hacer los params opcionales.
                         </p>
 
