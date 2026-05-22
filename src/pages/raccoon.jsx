@@ -34,7 +34,7 @@ export function Raccoon() {
             </section>
 
             <section className="hero">
-                <div className="hero-image">
+                <div className="hero-image-skills">
                     <img src={raccoonImg} alt="Raccoon App" />
                 </div>
 
@@ -79,7 +79,7 @@ export function Raccoon() {
 
                 </div>
 
-                <div className="hero-image">
+                <div className="hero-image-skills">
                     <img src={raccoonImg} alt="Raccoon App" />
                 </div>
 
@@ -87,7 +87,7 @@ export function Raccoon() {
 
             <section className="hero">
 
-                <div className="hero-image">
+                <div className="hero-image-skills">
                     <img src={raccoonImg} alt="Raccoon App" />
                 </div>
 
