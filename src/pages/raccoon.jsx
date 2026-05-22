@@ -214,6 +214,40 @@ export function Raccoon() {
                     <div className="changelog-item">
 
                         <div className="changelog-header">
+                            <span className="version-badge">v1.13.4</span>
+                            <span className="version-date">pre-release</span>
+                        </div>
+
+                        <p className="changelog-description">
+                            Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana, 
+                            se puede guardar la informacion de una peticion a un json, se permite importar informacion 
+                            a una peticion desde un json, se corrigen los bugs de las tabs, se corrigen errores
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>🎨 Se permite crear una ventana extra de la aplicacion</li>
+                            <li>⚙️ Se permite exportar la informacion de una peticion a un archivo json</li>
+                            <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
+                            <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
+                            <li>⚙️ Se corrigen bugs en las tabs</li>
+                            <li>⚙️ Se corrige un bug en el funcionamiento del menu de la aplicacion</li>
+                            <li>🎨 Se realizan mejoras visuales en el menu y el logo de la aplicacion</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
                             <span className="version-badge">v1.10.0</span>
                             <span className="version-date">pre-release</span>
                         </div>
