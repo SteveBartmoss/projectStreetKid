@@ -295,6 +295,42 @@ export function Raccoon() {
                         </div>
 
                         <p className="changelog-description">
+                            Mejoras de funcionalidades para la aplicacion, algunas de las novedades, 
+                            son el soporte para comandos y funciones de menu lis en las tabs, ademas de 
+                            correcion de bugs
+                        </p>
+
+                        <ul className="changelog-features">
+                            <li>⚙️ Se implementa una funcion para leer y guardar un archivo de configuracion de la aplicacion desde el directorio predeterminado</li>
+                            <li>⚙️ Se implementa la funcion para leer la configuracion de la aplicacion desde rust</li>
+                            <li>⚙️ Se guarda la configuracion para la aplicacion en el slice de la aplicacion</li>
+                            <li>⚙️ Se implementa el componente CommandObserver para leer los comandos</li>
+                            <li>⚙️ Se implementa el componente de menu helper para mostrar un menu list desde la tab</li>
+                            <li>⚙️ Se agrega al menu la ayuda visual de los shotcuts</li>
+                            <li>⚙️ Se implementa una mejora para la solucion del bug, se implementa use memo para mejorar la renderizacion de la preview del url en la aplicacion</li>
+                            <li>🎨 Se implementa el componente para mostrar un tooltip en la aplicacion</li>
+                            <li>🎨 Se agrega la funcion para limpiar la respuesta</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="changelog-link"
+                        >
+                            Ver release →
+                        </a>
+
+                    </div>
+
+                    <div className="changelog-item">
+
+                        <div className="changelog-header">
+                            <span className="version-badge">v1.13.4</span>
+                            <span className="version-date">pre-release</span>
+                        </div>
+
+                        <p className="changelog-description">
                             Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana,
                             se puede guardar la informacion de una peticion a un json, se permite importar informacion
                             a una peticion desde un json, se corrigen los bugs de las tabs, se corrigen errores
