@@ -290,7 +290,7 @@ export function Raccoon() {
                     <div className="changelog-item">
 
                         <div className="changelog-header">
-                            <span className="version-badge">v1.13.4</span>
+                            <span className="version-badge">v1.19.8</span>
                             <span className="version-date">pre-release</span>
                         </div>
 
