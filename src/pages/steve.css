@@ -1,4 +1,37 @@
 
+.div-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-aside{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.div-img-profile{
+    margin: 1rem;
+}
+
+.img-profile{
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+.div-main-content{
+    border: 1px solid white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.img-grid{
+    width: 15rem;
+}
+
 .div-full{
     width: 100vw;
     height: 100vh;
