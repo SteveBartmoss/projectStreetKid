@@ -23,7 +23,7 @@ export function Home() {
                 </p>
 
                 <div className="actions">
-                    <button className="btn-primary">
+                    <button className="btn-secondary">
                         Ver proyectos
                     </button>
 
