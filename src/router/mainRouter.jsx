@@ -4,6 +4,7 @@ import { MainLayout } from "../layouts/mainLayout";
 import { Projects } from "../pages/projects";
 import { Raccoon } from "../pages/raccoon";
 import { NeoFetch } from "../pages/neofetch";
+import { Steve } from "../pages/steve";
 
 
 export function MainRouter() {
@@ -16,6 +17,7 @@ export function MainRouter() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/raccoon" element={<Raccoon />} />
                     <Route path="/neofetch" element={<NeoFetch />} />
+                    <Route path="/steve" element={<Steve />} />
                 </Routes>
             </MainLayout>
         </BrowserRouter>
