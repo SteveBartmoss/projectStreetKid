@@ -30,6 +30,15 @@ export function TopBar() {
                     >
                         GitHub
                     </a>
+
+                    <NavLink 
+                        to="/steve" 
+                        className={({ isActive }) => 
+                            isActive ? "nav-link active" : "nav-link"
+                        }
+                    >
+                        Sobre steve
+                    </NavLink>
                 </nav>
 
             </div>
