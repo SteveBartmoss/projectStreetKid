@@ -1,0 +1,24 @@
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.div-canvas{
+    position: relative; 
+    width: 100%; 
+    height: 400px; 
+    background: #111;
+}
+
+.div-child{
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+    text-align: 'center'; 
+    padding-top: 50px;
+}
