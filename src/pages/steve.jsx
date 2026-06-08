@@ -1,4 +1,5 @@
 import { PartcilesCanvas } from '../components/particles/particlesCanvas'
+import { PartcilesSnakeCanvas } from '../components/particles/particlesSnakeCanvas'
 import './steve.css'
 
 export function Steve() {
@@ -53,6 +54,21 @@ export function Steve() {
                         </div>
                         <h1>Content</h1>
                     </PartcilesCanvas>
+
+                    <PartcilesSnakeCanvas>
+                        <div>
+                            <h1>Proyectos actuales</h1>
+
+                            <div>
+                                <h1>Raccoon</h1>
+                            </div>
+
+                            <div>
+                                <h1>Neofetch</h1>
+                            </div>
+                        </div>
+                        <h1>Content</h1>
+                    </PartcilesSnakeCanvas>
 
                 </div>
             </div>
