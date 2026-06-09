@@ -55,6 +55,18 @@
     border-radius: 12px;
 }
 
+.gradiant-right {
+    background: #4ea7d4;
+    background: linear-gradient(325deg, rgba(78, 167, 212, 1) 0%, rgba(39, 85, 112, 1) 14%, rgba(60, 61, 66, 1) 94%);
+    border-radius: 1rem;
+}
+
+.gradiant-left {
+    background: #4ea7d4;
+    background: linear-gradient(136deg, rgba(78, 167, 212, 1) 0%, rgba(39, 85, 112, 1) 14%, rgba(60, 61, 66, 1) 94%);
+    border-radius: 1rem;
+}
+
 /* BUTTON */
 .btn-primary {
     display: inline-block;
