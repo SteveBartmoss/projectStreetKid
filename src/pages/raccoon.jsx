@@ -33,7 +33,7 @@ export function Raccoon() {
                 </div>
             </section>
 
-            <section className="hero">
+            <section className="hero gradiant-right">
                 <div className="hero-image-skills">
                     <img src={raccoonImg} alt="Raccoon App" />
                 </div>
@@ -56,7 +56,7 @@ export function Raccoon() {
                 </div>
             </section>
 
-            <section className="hero hero-reverse">
+            <section className="hero hero-reverse gradiant-left">
 
                 <div className="hero-text">
 
@@ -85,7 +85,7 @@ export function Raccoon() {
 
             </section>
 
-            <section className="hero">
+            <section className="hero gradiant-right">
 
                 <div className="hero-image-skills">
                     <img src={raccoonImg} alt="Raccoon App" />
