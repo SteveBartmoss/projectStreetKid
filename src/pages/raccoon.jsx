@@ -1,4 +1,7 @@
 import raccoonImg from '../assets/raccoon.png'
+import reactImg from '../assets/react.svg'
+import rustImg from '../assets/rust-logo.svg'
+import tauriImg from '../assets/tauri.png'
 import './raccoon.css'
 
 export function Raccoon() {
@@ -123,14 +126,40 @@ export function Raccoon() {
                 </div>
             </section>
 
-            <section className="section">
-                <h2>Tech stack</h2>
-                <div className="tags">
-                    <span>React</span>
-                    <span>Rust</span>
-                    <span>Tauri</span>
-                    <span>Reqwest</span>
+            <section className="hero">
+
+                <div className="hero-text">
+
+                    <h1>Tech stack</h1>
+
+                    <h2>Modernas y potentes</h2>
+
+                    <p className="description">
+                        La combinacion de las tecnologias web y bajo nivel, permiten 
+                        un estilo moderno sin perder potencia en el acceso a bajo nivel.
+                        Permitiendo una mejor eficiencia libre del empaquetado de chromium
+                    </p>
+
                 </div>
+
+                <div className="hero-tech-cards">
+                    <div className="tech-card">
+                        <img src={reactImg} alt="Raccoon App" />
+                        <h1>React</h1>
+                        <span>Front end moderno</span>
+                    </div>
+                    <div className="tech-card">
+                        <img src={rustImg} alt="Raccoon App" />
+                        <h1>Rust</h1>
+                        <span>Seguro y eficiente</span>
+                    </div>
+                    <div className="tech-card">
+                        <img src={tauriImg} alt="Raccoon App" />
+                        <h1>Tauri</h1>
+                        <span>Framewor ligero y eficiente</span>
+                    </div>
+                </div>
+
             </section>
 
             <section className="section">
