@@ -55,6 +55,40 @@
     border-radius: 12px;
 }
 
+.hero-tech-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tech-card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.tech-card:hover {
+    border-color: #3182ce;
+    transform: translateY(-3px);
+}
+
+.tech-card img {
+    max-width: 2.2rem;
+}
+
+.tech-card h1 {
+    font-size: 1.8rem;
+    margin: .3rem;
+}
+
+.tech-card span {
+    font-size: 0.6rem;
+    color: #777;
+    font-weight: 600;
+}
+
 .gradiant-right {
     background: #4ea7d4;
     background: linear-gradient(325deg, rgba(78, 167, 212, 1) 0%, rgba(39, 85, 112, 1) 14%, rgba(60, 61, 66, 1) 94%);
