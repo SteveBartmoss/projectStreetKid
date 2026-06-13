@@ -5,7 +5,7 @@ import { Projects } from "../pages/projects";
 import { Raccoon } from "../pages/raccoon";
 import { NeoFetch } from "../pages/neofetch";
 import { Steve } from "../pages/steve";
-
+import { RacoonChangeLog } from "../pages/racoonChangeLog";
 
 export function MainRouter() {
 
@@ -15,7 +15,8 @@ export function MainRouter() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/raccoon" element={<Raccoon />} />
+                    <Route path="/racoon" element={<Raccoon />} />
+                    <Route path="/racoon/changelog" element={<RacoonChangeLog />} />
                     <Route path="/neofetch" element={<NeoFetch />} />
                     <Route path="/steve" element={<Steve />} />
                 </Routes>
