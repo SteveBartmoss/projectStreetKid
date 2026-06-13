@@ -65,30 +65,7 @@ export function PartcilesSnake({ children }) {
     }
   }
 
-  const initParticles = (width, height) => {
-    const arr = [];
-    for (let i = 0; i < numParticles; i++) {
-      arr.push(new Particle(width, height));
-    }
-    particlesRef.current = arr;
-  };
-
-  const animate = (ctx, width, height) => {
-    ctx.clearRect(0, 0, width, height);
-
-    const particles = particlesRef.current;
-
-    for (let p of particles) {
-      p.update(width, height);
-      p.draw(ctx);
-    }
-
-    // Ya no dibujamos líneas entre partículas (efecto anterior eliminado)
-
-    animationIdRef.current = requestAnimationFrame(() =>
-      animate(ctx, width, height)
-    );
-  };
+  
 
   useEffect(() => {
     const canvas = canvasRef.current;
