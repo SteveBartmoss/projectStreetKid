@@ -4,13 +4,14 @@ import rustImg from '../assets/rust-logo.svg'
 import tauriImg from '../assets/tauri.png'
 import { PartcilesSnake } from '../components/particles/particlesSnake'
 import { PartcilesSnakeCanvas } from '../components/particles/particlesSnakeCanvas'
+import { ParticlesSnakeRacional } from '../components/particles/particlesSnakeRacional'
 import './raccoon.css'
 
 export function Raccoon() {
 
     return (
         <>
-            <PartcilesSnake>
+            <ParticlesSnakeRacional>
                 <div className="raccoon-container">
                     <section className="hero-main">
                         <div className="hero-text">
@@ -39,11 +40,10 @@ export function Raccoon() {
                         </div>
                     </section>
                 </div>
-
-            </PartcilesSnake>
+            </ParticlesSnakeRacional>
             <div className="raccoon-container">
 
-                <section className="hero gradiant-right">
+                <section className="hero">
                     <div className="hero-image-skills">
                         <img src={raccoonImg} alt="Raccoon App" />
                     </div>
@@ -66,7 +66,7 @@ export function Raccoon() {
                     </div>
                 </section>
 
-                <section className="hero hero-reverse gradiant-left">
+                <section className="hero hero-reverse">
 
                     <div className="hero-text">
 
@@ -95,7 +95,7 @@ export function Raccoon() {
 
                 </section>
 
-                <section className="hero gradiant-right">
+                <section className="hero">
 
                     <div className="hero-image-skills">
                         <img src={raccoonImg} alt="Raccoon App" />
