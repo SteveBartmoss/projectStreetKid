@@ -21,4 +21,14 @@
     color: white; 
     text-align: 'center'; 
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.div-canvas-snake{
+    position: relative; 
+    width: 100%;
+    background: #111;
+    /*
+    background-image: linear-gradient( 110.7deg,  rgba(15,33,43,1) 1.2%, rgba(74,123,157,1) 88.2% );
+    */
 }
