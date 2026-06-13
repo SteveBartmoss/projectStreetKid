@@ -7,6 +7,17 @@
 }
 
 /* HERO */
+
+.hero-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(22, 23, 29, .9);
+}
+
 .hero {
     display: flex;
     flex-wrap: wrap;
