@@ -2,543 +2,551 @@ import raccoonImg from '../assets/raccoon.png'
 import reactImg from '../assets/react.svg'
 import rustImg from '../assets/rust-logo.svg'
 import tauriImg from '../assets/tauri.png'
+import { PartcilesSnake } from '../components/particles/particlesSnake'
+import { PartcilesSnakeCanvas } from '../components/particles/particlesSnakeCanvas'
 import './raccoon.css'
 
 export function Raccoon() {
 
     return (
-        <div className="raccoon-container">
+        <>
+            <PartcilesSnake>
+                <div className="raccoon-container">
+                    <section className="hero-main">
+                        <div className="hero-text">
+                            <h1>Raccoon</h1>
+                            <p className="version">v1.0.0 latest</p>
 
-            <section className="hero">
-                <div className="hero-text">
-                    <h1>Raccoon</h1>
-                    <p className="version">v1.0.0 latest</p>
+                            <h2>Cliente REST ligero y nativo</h2>
 
-                    <h2>Cliente REST ligero y nativo</h2>
+                            <p className="description">
+                                Una alternativa GNU simple para probar APIs REST.
+                                Rápido, ligero y enfocado en lo esencial.
+                            </p>
 
-                    <p className="description">
-                        Una alternativa GNU simple para probar APIs REST.
-                        Rápido, ligero y enfocado en lo esencial.
-                    </p>
+                            <a
+                                href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-primary"
+                            >
+                                Descargar
+                            </a>
+                        </div>
 
-                    <a
-                        href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn-primary"
-                    >
-                        Descargar
-                    </a>
+                        <div className="hero-image">
+                            <img src={raccoonImg} alt="Raccoon App" />
+                        </div>
+                    </section>
                 </div>
 
-                <div className="hero-image">
-                    <img src={raccoonImg} alt="Raccoon App" />
-                </div>
-            </section>
+            </PartcilesSnake>
+            <div className="raccoon-container">
 
-            <section className="hero gradiant-right">
-                <div className="hero-image-skills">
-                    <img src={raccoonImg} alt="Raccoon App" />
-                </div>
-
-                <div className="hero-text">
-
-                    <h1>Private by Design</h1>
-
-                    <h2>Un cliente REST que respeta tu privacidad</h2>
-
-                    <p className="description">
-                        Raccoon funciona completamente de forma local.
-                        No requiere cuentas, servicios en la nube ni conexiones externas.
-                        Todas las peticiones, configuraciones y datos permanecen en tu máquina.
-
-                        Sin telemetría. Sin tracking. Sin dependencias innecesarias.
-                        Tú mantienes el control total de tu información.
-                    </p>
-
-                </div>
-            </section>
-
-            <section className="hero hero-reverse gradiant-left">
-
-                <div className="hero-text">
-
-                    <h1>De desarrollador</h1>
-
-                    <h2>Para desarrolladores</h2>
-
-                    <p className="description">
-                        Raccoon nace desde la experiencia real de desarrollo.
-                        No busca crear un ecosistema cerrado ni imponer flujos de trabajo.
-                        Su objetivo es integrarse naturalmente con tus herramientas,
-                        scripts y procesos existentes.
-                    </p>
-
-                    <p className="description secondary">
-                        Una herramienta abierta, extensible y pensada para quienes
-                        prefieren entender lo que usan en lugar de depender de
-                        software opaco.
-                    </p>
-
-                </div>
-
-                <div className="hero-image-skills">
-                    <img src={raccoonImg} alt="Raccoon App" />
-                </div>
-
-            </section>
-
-            <section className="hero gradiant-right">
-
-                <div className="hero-image-skills">
-                    <img src={raccoonImg} alt="Raccoon App" />
-                </div>
-
-                <div className="hero-text">
-
-                    <h1>Transparente</h1>
-
-                    <h2>Sin sorpresas</h2>
-
-                    <p className="description">
-                        El código fuente del proyecto está completamente disponible.
-                        Puedes inspeccionarlo, auditarlo e incluso modificarlo según
-                        tus necesidades. Sabes exactamente qué estás instalando:
-                        sin software innecesario, sin componentes ocultos y sin
-                        sorpresas desagradables.
-                    </p>
-
-                </div>
-
-            </section>
-
-            {/* FEATURES */}
-            <section className="section">
-                <h2>Features</h2>
-                <div className="grid">
-                    <div className="card">⚡ Fast native HTTP requests</div>
-                    <div className="card">📊 Status, response time and size</div>
-                    <div className="card">🧾 JSON viewer</div>
-                    <div className="card">🎯 Minimal UI</div>
-                    <div className="card">🪟 Sistema de ventanas</div>
-                    <div className="card">🔐 Auth</div>
-                    <div className="card">⚙️ Parámetros dinámicos</div>
-                </div>
-            </section>
-
-            <section className="hero">
-
-                <div className="hero-text">
-
-                    <h1>Tech stack</h1>
-
-                    <h2>Modernas y potentes</h2>
-
-                    <p className="description">
-                        La combinacion de las tecnologias web y bajo nivel, permiten 
-                        un estilo moderno sin perder potencia en el acceso a bajo nivel.
-                        Permitiendo una mejor eficiencia libre del empaquetado de chromium
-                    </p>
-
-                </div>
-
-                <div className="hero-tech-cards">
-                    <div className="tech-card">
-                        <img src={reactImg} alt="Raccoon App" />
-                        <h1>React</h1>
-                        <span>Front end moderno</span>
-                    </div>
-                    <div className="tech-card">
-                        <img src={rustImg} alt="Raccoon App" />
-                        <h1>Rust</h1>
-                        <span>Seguro y eficiente</span>
-                    </div>
-                    <div className="tech-card">
-                        <img src={tauriImg} alt="Raccoon App" />
-                        <h1>Tauri</h1>
-                        <span>Framewor ligero y eficiente</span>
-                    </div>
-                </div>
-
-            </section>
-
-            <section className="section">
-                <h2>Roadmap</h2>
-
-                <div className="grid">
-                    <div className="card">
-                        🎨 Mejoras UI
-                        <p className="card-sub">Refinamiento visual y UX</p>
+                <section className="hero gradiant-right">
+                    <div className="hero-image-skills">
+                        <img src={raccoonImg} alt="Raccoon App" />
                     </div>
 
-                    <div className="card">
-                        📜 Historial
-                        <p className="card-sub">Registro de peticiones</p>
-                    </div>
+                    <div className="hero-text">
 
-                    <div className="card">
-                        ⚙️ Descargar respuesta
-                        <p className="card-sub">Manejo de descarga de un archivo con la respuesta</p>
-                    </div>
+                        <h1>Private by Design</h1>
 
-                    <div className="card">
-                        ⚙️ Manejo de Errores
-                        <p className="card-sub">Mostrar errores ocurridos</p>
-                    </div>
+                        <h2>Un cliente REST que respeta tu privacidad</h2>
 
-                    <div className="card">
-                        ⚙️ Colleciones
-                        <p className="card-sub">Permitir crear colleciones de peticiones</p>
-                    </div>
+                        <p className="description">
+                            Raccoon funciona completamente de forma local.
+                            No requiere cuentas, servicios en la nube ni conexiones externas.
+                            Todas las peticiones, configuraciones y datos permanecen en tu máquina.
 
-                    <div className="card">
-                        ⚙️ Variables de entorno
-                        <p className="card-sub">Permitir crear variables de entorno</p>
-                    </div>
-
-
-                    <div className="card">
-                        ⚙️ Guardado de peticiones
-                        <p className="card-sub">Permitir guardar peticiones</p>
-                    </div>
-
-                </div>
-            </section>
-
-            <section className="section">
-                <h2>Download</h2>
-
-                <div className="grid">
-                    <div className="card">
-                        🐧 Linux
-                        <p className="card-sub">Disponible en Latest</p>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-secondary"
-                        >
-                            Descargar
-                        </a>
-                    </div>
-
-                    <div className="card">
-                        🪟 Windows
-                        <p className="card-sub">Disponible en Latest</p>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-secondary"
-                        >
-                            Descargar
-                        </a>
-                    </div>
-
-                    <div className="card">
-                        🍎 macOS
-                        <p className="card-sub">Disponible en Latest</p>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-secondary"
-                        >
-                            Descargar
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section className="install">
-
-                <h2>Instalación en Linux</h2>
-
-                <div className="install-grid">
-
-                    <div className="install-card">
-
-                        <h3>🐧 Debian / Ubuntu</h3>
-
-                        <p className="install-description">
-                            Descarga el paquete <strong>.deb</strong> e instálalo con el siguiente comando:
+                            Sin telemetría. Sin tracking. Sin dependencias innecesarias.
+                            Tú mantienes el control total de tu información.
                         </p>
 
-                        <div className="code-block">
-                            sudo dpkg -i racoon_0.1.0_amd64.deb
-                        </div>
+                    </div>
+                </section>
 
-                        <p className="install-note">
-                            Si hay errores de dependencias:
+                <section className="hero hero-reverse gradiant-left">
+
+                    <div className="hero-text">
+
+                        <h1>De desarrollador</h1>
+
+                        <h2>Para desarrolladores</h2>
+
+                        <p className="description">
+                            Raccoon nace desde la experiencia real de desarrollo.
+                            No busca crear un ecosistema cerrado ni imponer flujos de trabajo.
+                            Su objetivo es integrarse naturalmente con tus herramientas,
+                            scripts y procesos existentes.
                         </p>
 
-                        <div className="code-block">
-                            sudo apt install -f
+                        <p className="description secondary">
+                            Una herramienta abierta, extensible y pensada para quienes
+                            prefieren entender lo que usan en lugar de depender de
+                            software opaco.
+                        </p>
+
+                    </div>
+
+                    <div className="hero-image-skills">
+                        <img src={raccoonImg} alt="Raccoon App" />
+                    </div>
+
+                </section>
+
+                <section className="hero gradiant-right">
+
+                    <div className="hero-image-skills">
+                        <img src={raccoonImg} alt="Raccoon App" />
+                    </div>
+
+                    <div className="hero-text">
+
+                        <h1>Transparente</h1>
+
+                        <h2>Sin sorpresas</h2>
+
+                        <p className="description">
+                            El código fuente del proyecto está completamente disponible.
+                            Puedes inspeccionarlo, auditarlo e incluso modificarlo según
+                            tus necesidades. Sabes exactamente qué estás instalando:
+                            sin software innecesario, sin componentes ocultos y sin
+                            sorpresas desagradables.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                {/* FEATURES */}
+                <section className="section">
+                    <h2>Features</h2>
+                    <div className="grid">
+                        <div className="card">⚡ Fast native HTTP requests</div>
+                        <div className="card">📊 Status, response time and size</div>
+                        <div className="card">🧾 JSON viewer</div>
+                        <div className="card">🎯 Minimal UI</div>
+                        <div className="card">🪟 Sistema de ventanas</div>
+                        <div className="card">🔐 Auth</div>
+                        <div className="card">⚙️ Parámetros dinámicos</div>
+                    </div>
+                </section>
+
+                <section className="hero">
+
+                    <div className="hero-text">
+
+                        <h1>Tech stack</h1>
+
+                        <h2>Modernas y potentes</h2>
+
+                        <p className="description">
+                            La combinacion de las tecnologias web y bajo nivel, permiten
+                            un estilo moderno sin perder potencia en el acceso a bajo nivel.
+                            Permitiendo una mejor eficiencia libre del empaquetado de chromium
+                        </p>
+
+                    </div>
+
+                    <div className="hero-tech-cards">
+                        <div className="tech-card">
+                            <img src={reactImg} alt="Raccoon App" />
+                            <h1>React</h1>
+                            <span>Front end moderno</span>
+                        </div>
+                        <div className="tech-card">
+                            <img src={rustImg} alt="Raccoon App" />
+                            <h1>Rust</h1>
+                            <span>Seguro y eficiente</span>
+                        </div>
+                        <div className="tech-card">
+                            <img src={tauriImg} alt="Raccoon App" />
+                            <h1>Tauri</h1>
+                            <span>Framewor ligero y eficiente</span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section className="section">
+                    <h2>Roadmap</h2>
+
+                    <div className="grid">
+                        <div className="card">
+                            🎨 Mejoras UI
+                            <p className="card-sub">Refinamiento visual y UX</p>
+                        </div>
+
+                        <div className="card">
+                            📜 Historial
+                            <p className="card-sub">Registro de peticiones</p>
+                        </div>
+
+                        <div className="card">
+                            ⚙️ Descargar respuesta
+                            <p className="card-sub">Manejo de descarga de un archivo con la respuesta</p>
+                        </div>
+
+                        <div className="card">
+                            ⚙️ Manejo de Errores
+                            <p className="card-sub">Mostrar errores ocurridos</p>
+                        </div>
+
+                        <div className="card">
+                            ⚙️ Colleciones
+                            <p className="card-sub">Permitir crear colleciones de peticiones</p>
+                        </div>
+
+                        <div className="card">
+                            ⚙️ Variables de entorno
+                            <p className="card-sub">Permitir crear variables de entorno</p>
+                        </div>
+
+
+                        <div className="card">
+                            ⚙️ Guardado de peticiones
+                            <p className="card-sub">Permitir guardar peticiones</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section className="section">
+                    <h2>Download</h2>
+
+                    <div className="grid">
+                        <div className="card">
+                            🐧 Linux
+                            <p className="card-sub">Disponible en Latest</p>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-secondary"
+                            >
+                                Descargar
+                            </a>
+                        </div>
+
+                        <div className="card">
+                            🪟 Windows
+                            <p className="card-sub">Disponible en Latest</p>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-secondary"
+                            >
+                                Descargar
+                            </a>
+                        </div>
+
+                        <div className="card">
+                            🍎 macOS
+                            <p className="card-sub">Disponible en Latest</p>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-secondary"
+                            >
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="install">
+
+                    <h2>Instalación en Linux</h2>
+
+                    <div className="install-grid">
+
+                        <div className="install-card">
+
+                            <h3>🐧 Debian / Ubuntu</h3>
+
+                            <p className="install-description">
+                                Descarga el paquete <strong>.deb</strong> e instálalo con el siguiente comando:
+                            </p>
+
+                            <div className="code-block">
+                                sudo dpkg -i racoon_0.1.0_amd64.deb
+                            </div>
+
+                            <p className="install-note">
+                                Si hay errores de dependencias:
+                            </p>
+
+                            <div className="code-block">
+                                sudo apt install -f
+                            </div>
+
+                        </div>
+
+                        <div className="install-card">
+
+                            <h3>📦 Otras distribuciones</h3>
+
+                            <p className="install-description">
+                                Usa el archivo <strong>AppImage</strong> (portable, sin instalación).
+                            </p>
+
+                            <ol className="steps">
+                                <li>Descarga el archivo .AppImage</li>
+                                <li>Hazlo ejecutable:</li>
+                            </ol>
+
+                            <div className="code-block">
+                                chmod +x racoon_0.1.0_amd64.AppImage
+                            </div>
+
+                            <p className="install-note">Ejecuta la aplicación:</p>
+
+                            <div className="code-block">
+                                ./racoon_0.1.0_amd64.AppImage
+                            </div>
+
                         </div>
 
                     </div>
 
-                    <div className="install-card">
+                </section>
 
-                        <h3>📦 Otras distribuciones</h3>
+                <section className="changelog">
 
-                        <p className="install-description">
-                            Usa el archivo <strong>AppImage</strong> (portable, sin instalación).
-                        </p>
+                    <h2>Changelog</h2>
 
-                        <ol className="steps">
-                            <li>Descarga el archivo .AppImage</li>
-                            <li>Hazlo ejecutable:</li>
-                        </ol>
+                    <div className="changelog-list">
 
-                        <div className="code-block">
-                            chmod +x racoon_0.1.0_amd64.AppImage
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v1.19.8</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras de funcionalidades para la aplicacion, algunas de las novedades,
+                                son el soporte para comandos y funciones de menu lis en las tabs, ademas de
+                                correcion de bugs
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>⚙️ Se implementa una funcion para leer y guardar un archivo de configuracion de la aplicacion desde el directorio predeterminado</li>
+                                <li>⚙️ Se implementa la funcion para leer la configuracion de la aplicacion desde rust</li>
+                                <li>⚙️ Se guarda la configuracion para la aplicacion en el slice de la aplicacion</li>
+                                <li>⚙️ Se implementa el componente CommandObserver para leer los comandos</li>
+                                <li>⚙️ Se implementa el componente de menu helper para mostrar un menu list desde la tab</li>
+                                <li>⚙️ Se agrega al menu la ayuda visual de los shotcuts</li>
+                                <li>⚙️ Se implementa una mejora para la solucion del bug, se implementa use memo para mejorar la renderizacion de la preview del url en la aplicacion</li>
+                                <li>🎨 Se implementa el componente para mostrar un tooltip en la aplicacion</li>
+                                <li>🎨 Se agrega la funcion para limpiar la respuesta</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
                         </div>
 
-                        <p className="install-note">Ejecuta la aplicación:</p>
+                        <div className="changelog-item">
 
-                        <div className="code-block">
-                            ./racoon_0.1.0_amd64.AppImage
+                            <div className="changelog-header">
+                                <span className="version-badge">v1.13.4</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana,
+                                se puede guardar la informacion de una peticion a un json, se permite importar informacion
+                                a una peticion desde un json, se corrigen los bugs de las tabs, se corrigen errores
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>🎨 Se permite crear una ventana extra de la aplicacion</li>
+                                <li>⚙️ Se permite exportar la informacion de una peticion a un archivo json</li>
+                                <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
+                                <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
+                                <li>⚙️ Se corrigen bugs en las tabs</li>
+                                <li>⚙️ Se corrige un bug en el funcionamiento del menu de la aplicacion</li>
+                                <li>🎨 Se realizan mejoras visuales en el menu y el logo de la aplicacion</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
+                        </div>
+
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v1.10.0</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras funcionalidades para la aplicacion, se implementa el manejo de headers,
+                                se implementa el manejo de errores, se implementa un nuevo componenre para la
+                                visualizacion de los errores, se mejora el acomo de la aplicacion
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>⚙️ Se pueden mandar los headers en la peticion</li>
+                                <li>⚙️ Deteccion de errores al momento de enviar la peticion</li>
+                                <li>⚙️ Nuevo componene para mostrar los errores</li>
+                                <li>🎨 Se mejora aun mas el scroll que tenia la aplicacion, se
+                                    trabaja con una plantilla mejor acomodada
+                                </li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
+                        </div>
+
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v1.7.0</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras internas para la aplicacion, se mejora el manejo de las tabs. Se dividio
+                                la informacion para las tabs y para las request, se implementa una mejora para
+                                descargar la respuesta, se implementa una mejora para hacer los params opcionales.
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>⚙️ Mejor soporte para al manejo de las tabs</li>
+                                <li>⚙️ Funcion para descargar la respuesta desde la aplicacion</li>
+                                <li>⚙️ Se implemento la funcion para hacer los params opcionales</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
+                        </div>
+
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v1.0.0</span>
+                                <span className="version-date">Latest</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras visuales para el branding de la aplicacion y mejor aspecto para el usuario.
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>🎨 Icono personalizado para la aplicacion</li>
+                                <li>🎨 Se removio por completo el scroll vertial y horizontal</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
+                        </div>
+
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v0.13.2</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras visuales en funcionalidades del cliente y experiencia de usuario.
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>🎨 Colores en estatus de la respuesta</li>
+                                <li>🎨 Colores en los encabezados de la tab</li>
+                                <li>🪟 Mejor acomodo en los elementos visuales de la aplicacion</li>
+                                <li>⚙️ Archivos para la aplicacion en windows y macos</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
+                        </div>
+
+                        <div className="changelog-item">
+
+                            <div className="changelog-header">
+                                <span className="version-badge">v0.9.0</span>
+                                <span className="version-date">pre-release</span>
+                            </div>
+
+                            <p className="changelog-description">
+                                Mejoras importantes en funcionalidades del cliente y experiencia de usuario.
+                            </p>
+
+                            <ul className="changelog-features">
+                                <li>⚙️ Soporte para parámetros dinámicos</li>
+                                <li>🔐 Soporte para autenticación por token</li>
+                                <li>🪟 Manejo de múltiples tabs</li>
+                                <li>🎨 Mejoras en la interfaz</li>
+                            </ul>
+
+                            <a
+                                href="https://github.com/SteveBartmoss/projectRacoon/releases"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="changelog-link"
+                            >
+                                Ver release →
+                            </a>
+
                         </div>
 
                     </div>
 
-                </div>
+                </section>
 
-            </section>
-
-            <section className="changelog">
-
-                <h2>Changelog</h2>
-
-                <div className="changelog-list">
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v1.19.8</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras de funcionalidades para la aplicacion, algunas de las novedades, 
-                            son el soporte para comandos y funciones de menu lis en las tabs, ademas de 
-                            correcion de bugs
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>⚙️ Se implementa una funcion para leer y guardar un archivo de configuracion de la aplicacion desde el directorio predeterminado</li>
-                            <li>⚙️ Se implementa la funcion para leer la configuracion de la aplicacion desde rust</li>
-                            <li>⚙️ Se guarda la configuracion para la aplicacion en el slice de la aplicacion</li>
-                            <li>⚙️ Se implementa el componente CommandObserver para leer los comandos</li>
-                            <li>⚙️ Se implementa el componente de menu helper para mostrar un menu list desde la tab</li>
-                            <li>⚙️ Se agrega al menu la ayuda visual de los shotcuts</li>
-                            <li>⚙️ Se implementa una mejora para la solucion del bug, se implementa use memo para mejorar la renderizacion de la preview del url en la aplicacion</li>
-                            <li>🎨 Se implementa el componente para mostrar un tooltip en la aplicacion</li>
-                            <li>🎨 Se agrega la funcion para limpiar la respuesta</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v1.13.4</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras de funcionalidades para la aplicacion, se puede crear una nueva ventana,
-                            se puede guardar la informacion de una peticion a un json, se permite importar informacion
-                            a una peticion desde un json, se corrigen los bugs de las tabs, se corrigen errores
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>🎨 Se permite crear una ventana extra de la aplicacion</li>
-                            <li>⚙️ Se permite exportar la informacion de una peticion a un archivo json</li>
-                            <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
-                            <li>⚙️ Se permite importar informacion a una peticion desde una archivo json</li>
-                            <li>⚙️ Se corrigen bugs en las tabs</li>
-                            <li>⚙️ Se corrige un bug en el funcionamiento del menu de la aplicacion</li>
-                            <li>🎨 Se realizan mejoras visuales en el menu y el logo de la aplicacion</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v1.10.0</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras funcionalidades para la aplicacion, se implementa el manejo de headers,
-                            se implementa el manejo de errores, se implementa un nuevo componenre para la
-                            visualizacion de los errores, se mejora el acomo de la aplicacion
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>⚙️ Se pueden mandar los headers en la peticion</li>
-                            <li>⚙️ Deteccion de errores al momento de enviar la peticion</li>
-                            <li>⚙️ Nuevo componene para mostrar los errores</li>
-                            <li>🎨 Se mejora aun mas el scroll que tenia la aplicacion, se
-                                trabaja con una plantilla mejor acomodada
-                            </li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v1.7.0</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras internas para la aplicacion, se mejora el manejo de las tabs. Se dividio
-                            la informacion para las tabs y para las request, se implementa una mejora para
-                            descargar la respuesta, se implementa una mejora para hacer los params opcionales.
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>⚙️ Mejor soporte para al manejo de las tabs</li>
-                            <li>⚙️ Funcion para descargar la respuesta desde la aplicacion</li>
-                            <li>⚙️ Se implemento la funcion para hacer los params opcionales</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v1.0.0</span>
-                            <span className="version-date">Latest</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras visuales para el branding de la aplicacion y mejor aspecto para el usuario.
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>🎨 Icono personalizado para la aplicacion</li>
-                            <li>🎨 Se removio por completo el scroll vertial y horizontal</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v0.13.2</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras visuales en funcionalidades del cliente y experiencia de usuario.
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>🎨 Colores en estatus de la respuesta</li>
-                            <li>🎨 Colores en los encabezados de la tab</li>
-                            <li>🪟 Mejor acomodo en los elementos visuales de la aplicacion</li>
-                            <li>⚙️ Archivos para la aplicacion en windows y macos</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                    <div className="changelog-item">
-
-                        <div className="changelog-header">
-                            <span className="version-badge">v0.9.0</span>
-                            <span className="version-date">pre-release</span>
-                        </div>
-
-                        <p className="changelog-description">
-                            Mejoras importantes en funcionalidades del cliente y experiencia de usuario.
-                        </p>
-
-                        <ul className="changelog-features">
-                            <li>⚙️ Soporte para parámetros dinámicos</li>
-                            <li>🔐 Soporte para autenticación por token</li>
-                            <li>🪟 Manejo de múltiples tabs</li>
-                            <li>🎨 Mejoras en la interfaz</li>
-                        </ul>
-
-                        <a
-                            href="https://github.com/SteveBartmoss/projectRacoon/releases"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="changelog-link"
-                        >
-                            Ver release →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-        </div>
+            </div>
+        </>
     )
 
 }
