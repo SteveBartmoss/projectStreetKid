@@ -29,7 +29,7 @@ export function Projects() {
                         <span>🪶 Lightweight UI</span>
                     </div>
 
-                    <NavLink className="project-link" to={"/raccoon"}>
+                    <NavLink className="project-link" to={"/racoon"}>
                         Ver más →
                     </NavLink>
                 </div>
