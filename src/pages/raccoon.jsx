@@ -121,9 +121,15 @@ export function Raccoon() {
                 </section>
 
                 {/* FEATURES */}
-                <section className="section">
-                    <h2>Features</h2>
-                    <div className="grid">
+                <section className="hero-vertical">
+                    <h1>Features</h1>
+
+                    <p className="description">
+                        Una aplicacion simple pero potente, con las mejores
+                        caracteristicas para los desarrolladores
+                    </p>
+
+                    <div className="hero-tech-cards">
                         <div className="card">⚡ Fast native HTTP requests</div>
                         <div className="card">📊 Status, response time and size</div>
                         <div className="card">🧾 JSON viewer</div>
@@ -134,7 +140,7 @@ export function Raccoon() {
                     </div>
                 </section>
 
-                <section className="hero">
+                <section className="hero-vertical">
 
                     <div className="hero-text">
 
@@ -170,47 +176,82 @@ export function Raccoon() {
 
                 </section>
 
-                <section className="section">
-                    <h2>Roadmap</h2>
+                <section className="hero-vertical">
 
-                    <div className="grid">
+                    <h1>Roadmap</h1>
+
+                    <h2>Proximas mejoras</h2>
+
+                    <p className="description">
+                        Proximas funciones que estaran disponibles para la aplicacion,
+                        puedes dejar una issue en el repositorio con tu propia sugerencia.
+                    </p>
+
+                    <div className="hero-tech-cards">
                         <div className="card">
-                            🎨 Mejoras UI
+                            Mejoras UI
                             <p className="card-sub">Refinamiento visual y UX</p>
                         </div>
 
                         <div className="card">
-                            📜 Historial
+                            Historial
                             <p className="card-sub">Registro de peticiones</p>
                         </div>
 
                         <div className="card">
-                            ⚙️ Descargar respuesta
+                            Descargar respuesta
                             <p className="card-sub">Manejo de descarga de un archivo con la respuesta</p>
                         </div>
 
                         <div className="card">
-                            ⚙️ Manejo de Errores
+                            Manejo de Errores
                             <p className="card-sub">Mostrar errores ocurridos</p>
                         </div>
 
                         <div className="card">
-                            ⚙️ Colleciones
+                            Colleciones
                             <p className="card-sub">Permitir crear colleciones de peticiones</p>
                         </div>
 
                         <div className="card">
-                            ⚙️ Variables de entorno
+                            Variables de entorno
                             <p className="card-sub">Permitir crear variables de entorno</p>
                         </div>
 
 
                         <div className="card">
-                            ⚙️ Guardado de peticiones
+                            Guardado de peticiones
                             <p className="card-sub">Permitir guardar peticiones</p>
                         </div>
 
                     </div>
+                </section>
+
+                <section className="changelog">
+
+                    <div className="changelog-card">
+
+                        <h2>Download</h2>
+
+                        <p className="project-description">
+                            Puedes descaregar la aplicacion para multiples
+                            sistemas operativos
+                        </p>
+
+                        <div className="project-features">
+                            <span>🐧 Linux</span>
+                            <span>🪟 Windows</span>
+                            <span>🍎 macOS</span>
+                        </div>
+
+                        <NavLink
+                            className="project-link"
+                            to="/racoon/download"
+                        >
+                            Ver más →
+                        </NavLink>
+                    </div>
+
                 </section>
 
                 <section className="section">
@@ -320,20 +361,21 @@ export function Raccoon() {
 
                 <section className="changelog">
 
-                    <h2>Changelog</h2>
+                    <div className="project-card">
 
-                    <p>
-                        Puedes ver los cambios en el siguiente apartado
-                    </p>
+                        <h2>Changelog</h2>
 
-                    <NavLink 
-                        to="/racoon/changelog" 
-                        className={({ isActive }) => 
-                            isActive ? "nav-link active" : "nav-link"
-                        }
-                    >
-                        Change log
-                    </NavLink>
+                        <p className="project-description">
+                            Puedes ver los cambios en el siguiente apartado
+                        </p>
+
+                        <NavLink
+                            className="project-link"
+                            to="/racoon/changelog"
+                        >
+                            Ver más →
+                        </NavLink>
+                    </div>
 
                 </section>
 
