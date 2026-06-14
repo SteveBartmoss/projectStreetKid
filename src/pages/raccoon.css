@@ -18,6 +18,16 @@
     background: rgba(22, 23, 29, .9);
 }
 
+.hero-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1C1D26;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 4rem 0;
+}
+
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +81,8 @@
 .hero-tech-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .tech-card {
@@ -153,6 +164,7 @@
     padding: 1rem;
     border-radius: 10px;
     transition: 0.2s;
+    width: 10rem;
 }
 
 .card:hover {
@@ -263,7 +275,11 @@
 }
 
 .changelog {
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
 }
 
 .changelog h2 {
@@ -346,4 +362,15 @@
 
 .changelog-link:hover {
     color: white;
+}
+
+.changelog-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
