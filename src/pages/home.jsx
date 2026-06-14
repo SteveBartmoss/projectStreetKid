@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './home.css'
 
 export function Home() {
@@ -23,13 +24,18 @@ export function Home() {
                 </p>
 
                 <div className="actions">
-                    <button className="btn-secondary">
+                    <NavLink to="/projects" className="btn-secondary">
                         Ver proyectos
-                    </button>
+                    </NavLink>
 
-                    <button className="btn-secondary">
+                    <a 
+                        href="https://github.com/SteveBartmoss" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="btn-secondary"
+                    >
                         GitHub
-                    </button>
+                    </a>
                 </div>
 
             </div>
