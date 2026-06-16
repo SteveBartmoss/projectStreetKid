@@ -365,12 +365,50 @@
 }
 
 .changelog-card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 16px;
-    padding: 1.5rem;
-    transition: 0.25s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Tus estilos originales, pero sin el borde fijo */
+  background: #111;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+
+  /* Necesario para posicionar el pseudo‑elemento */
+  position: relative;
+
+  /* Opcional: si quieres separar la tarjeta del borde animado */
+  /* margin: 2px; */
+}
+
+/* Pseudo‑elemento que crea el borde animado */
+.changelog-card::before {
+  content: '';
+  position: absolute;
+  /* Desplazamos el pseudo‑elemento hacia afuera para que rodee la tarjeta */
+  inset: -2px;   /* grueso del «borde» = 2px */
+  border-radius: 16px;
+  /* Gradiente cónico que empezará desde un ángulo variable */
+  background: conic-gradient(
+    from var(--angle, 0deg),
+    #1C1D26,
+    #3182ce,
+    #3182ce
+  );
+  z-index: -1;   /* Detrás de la tarjeta */
+  animation: spin 2s linear infinite;
+}
+
+/* Definimos una propiedad personalizada para animar el ángulo */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Animación que rota el ángulo del gradiente */
+@keyframes spin {
+  0% { --angle: 0deg; }
+  100% { --angle: 360deg; }
 }
