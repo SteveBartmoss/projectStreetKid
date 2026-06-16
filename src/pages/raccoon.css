@@ -91,6 +91,7 @@
     padding: 1rem;
     border-radius: 10px;
     transition: 0.2s;
+    min-width: 8rem;
 }
 
 .tech-card:hover {
