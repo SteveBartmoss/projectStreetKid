@@ -374,3 +374,51 @@
     flex-direction: column;
     align-items: center;
 }
+
+.hero-download-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 4rem 0;
+}
+
+.hero-download-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.download-card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 10rem;
+}
+
+.download-card:hover {
+    border-color: #3182ce;
+    transform: translateY(-3px);
+}
+
+.download-card img {
+    max-width: 6rem;
+}
+
+.download-card h1 {
+    font-size: 1.8rem;
+    margin: .3rem;
+}
+
+.download-card span {
+    font-size: 0.6rem;
+    color: #777;
+    font-weight: 600;
+}
