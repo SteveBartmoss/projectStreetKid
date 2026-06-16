@@ -1,4 +1,7 @@
 import './racoon.css'
+import windowsImg from '../../assets/windows.png'
+import linuxImg from '../../assets/linux.png'
+import appleImg from '../../assets/apple.png'
 
 export function RacoonDownload() {
 
@@ -6,89 +9,26 @@ export function RacoonDownload() {
         <>
             <div className="raccoon-container">
 
-                <section className="hero-main">
-                    <div className="hero-text">
-                        <h1>Raccoon</h1>
-                        <p className="version">v1.0.0 latest</p>
+                <section className="hero-download-vertical">
 
-                        <h2>Cliente REST ligero y nativo</h2>
+                    <div className="hero-text">
+
+                        <h1>Descargar Racoon</h1>
+
+                        <h2>Cliente nativo, open source y ligero</h2>
 
                         <p className="description">
-                            Una alternativa GNU simple para probar APIs REST.
-                            Rápido, ligero y enfocado en lo esencial.
+                            La combinacion de las tecnologias web y bajo nivel, permiten
+                            un estilo moderno sin perder potencia en el acceso a bajo nivel.
+                            Permitiendo una mejor eficiencia libre del empaquetado de chromium
                         </p>
 
-                        <a
-                            href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-primary"
-                        >
-                            Descargar
-                        </a>
                     </div>
 
-
-                </section>
-
-                <section className="hero-main">
-                    <div className="hero-text">
-                        <h1>Raccoon</h1>
-                        <p className="version">v1.0.0 latest</p>
-
-                        <h2>Cliente REST ligero y nativo</h2>
-
-                        <p className="description">
-                            Una alternativa GNU simple para probar APIs REST.
-                            Rápido, ligero y enfocado en lo esencial.
-                        </p>
-
-                        <a
-                            href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-primary"
-                        >
-                            Descargar
-                        </a>
-                    </div>
-
-
-                </section>
-
-                <section className="hero-main">
-                    <div className="hero-text">
-                        <h1>Raccoon</h1>
-                        <p className="version">v1.0.0 latest</p>
-
-                        <h2>Cliente REST ligero y nativo</h2>
-
-                        <p className="description">
-                            Una alternativa GNU simple para probar APIs REST.
-                            Rápido, ligero y enfocado en lo esencial.
-                        </p>
-
-                        <a
-                            href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-primary"
-                        >
-                            Descargar
-                        </a>
-                    </div>
-
-
-                </section>
-
-                <section className="section">
-                    <h2>Download</h2>
-
-                    <div className="grid">
-                        <div className="card">
-                            🐧 Linux
-                            <p className="card-sub">Disponible en Latest</p>
-
+                    <div className="hero-download-cards">
+                        <div className="download-card">
+                            <img src={windowsImg} alt="Raccoon App" />
+                            <span>v1.0.0 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
@@ -98,11 +38,9 @@ export function RacoonDownload() {
                                 Descargar
                             </a>
                         </div>
-
-                        <div className="card">
-                            🪟 Windows
-                            <p className="card-sub">Disponible en Latest</p>
-
+                        <div className="download-card">
+                            <img src={linuxImg} alt="Raccoon App" />
+                            <span>v1.0.0 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
@@ -112,11 +50,9 @@ export function RacoonDownload() {
                                 Descargar
                             </a>
                         </div>
-
-                        <div className="card">
-                            🍎 macOS
-                            <p className="card-sub">Disponible en Latest</p>
-
+                        <div className="download-card">
+                            <img src={appleImg} alt="Raccoon App" />
+                            <span>v1.0.0 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
@@ -127,6 +63,7 @@ export function RacoonDownload() {
                             </a>
                         </div>
                     </div>
+
                 </section>
 
 
