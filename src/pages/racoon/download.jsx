@@ -28,7 +28,7 @@ export function RacoonDownload() {
                     <div className="hero-download-cards">
                         <div className="download-card">
                             <img src={windowsImg} alt="Raccoon App" />
-                            <span>v1.0.0 latest</span>
+                            <span>v1.23.15 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
@@ -40,7 +40,7 @@ export function RacoonDownload() {
                         </div>
                         <div className="download-card">
                             <img src={linuxImg} alt="Raccoon App" />
-                            <span>v1.0.0 latest</span>
+                            <span>v1.23.15 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
@@ -52,7 +52,7 @@ export function RacoonDownload() {
                         </div>
                         <div className="download-card">
                             <img src={appleImg} alt="Raccoon App" />
-                            <span>v1.0.0 latest</span>
+                            <span>v1.23.15 latest</span>
                             <a
                                 href="https://github.com/SteveBartmoss/projectRacoon/releases/tag/v0.13.1"
                                 target="_blank"
