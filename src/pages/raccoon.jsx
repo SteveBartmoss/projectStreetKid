@@ -274,6 +274,27 @@ export function Raccoon() {
 
                 </section>
 
+                <section className="changelog">
+
+                    <div className="project-card">
+
+                        <h2>Acerca del proyecto</h2>
+
+                        <p className="project-description">
+                            Si te interesa saber mas acerda de este 
+                            busca aqui
+                        </p>
+
+                        <NavLink
+                            className="project-link"
+                            to="/racoon/about"
+                        >
+                            Ver más →
+                        </NavLink>
+                    </div>
+
+                </section>
+
             </div>
         </>
     )
