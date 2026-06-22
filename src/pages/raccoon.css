@@ -280,6 +280,7 @@
     align-items: center;
     width: 70%;
     margin: auto;
+    margin-bottom: 1rem;
 }
 
 .changelog h2 {
@@ -337,7 +338,7 @@
     font-size: 0.95rem;
 }
 
-/* FEATURES */1
+/* FEATURES */
 .changelog-features {
     display: flex;
     flex-direction: column;
