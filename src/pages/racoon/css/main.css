@@ -1,0 +1,7 @@
+.racoon-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    color: #eaeaea;
+    font-family: system-ui, sans-serif;
+}
