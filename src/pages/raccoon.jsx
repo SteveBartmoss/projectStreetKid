@@ -6,7 +6,6 @@ import tauriImg from '../assets/tauri.png'
 import { PartcilesSnake } from '../components/particles/particlesSnake'
 import { PartcilesSnakeCanvas } from '../components/particles/particlesSnakeCanvas'
 import { ParticlesSnakeRacional } from '../components/particles/particlesSnakeRacional'
-import './raccoon.css'
 
 export function Raccoon() {
 
