@@ -140,49 +140,6 @@ export function RacoonAbout() {
                     </p>
 
                 </div>
-
-                <div className="hero-text">
-
-                    <h1>Linux First</h1>
-
-                    <h2>Desarrollador en linux</h2>
-
-                    <p className="description">
-                        Muchas aplicaciones se desarrollan pensando primero en windows, o macos, ya 
-                        que estos son los sistemas operativos mas populares y mas usados. Pero esta 
-                        aplicacion al estar enfocada a desarolladores se desarrolla y prueba directamente 
-                        en linux.
-                    </p>
-
-                    <p className="description">
-                        Por esta razon se implementa un paquete nativo para las distribuciones debian y un 
-                        app image de la aplicacion, la meta es ofreces tambien paquetes nativos para fedora y 
-                        otras distribuciones importantes como puede arch u open suse.
-                    </p>
-
-                </div>
-
-                <div className="hero-text">
-
-                    <h1>Creado para Desarolladores</h1>
-
-                    <h2>Desarrollador en linux</h2>
-
-                    <p className="description">
-                        La aplicacion esta pensada para ayudar a los desarolladores, no para generar 
-                        ingresos a costa de los desarrolladores, por esta razon no se busca poner un muro de 
-                        pago en la aplicacion. Todas las funciones de la aplicacion estaran siempre disponibles 
-                        para todos los usuarios y no se impondra ningun muro de pago para cietras utilidades 
-                        ni tampoco se requiere crear una cuenta para esto mismo.
-                    </p>
-
-                    <p className="description">
-                        Como un usuario continuo del codigo libre, esta es una forma de contribuir a la misma 
-                        comunidad que hace posible que use un sistema operativo como lo es ubuntu o cualquier 
-                        otra herramiento de gnu, espero este programa te sea de utilidad
-                    </p>
-
-                </div>
                 
             </section>
         </div>
