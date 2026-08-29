@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import './raccoon.css'
+import './css/changelog.css'
 
 export function RacoonChangeLog() {
 

@@ -1,4 +1,5 @@
-import './neofetch.css'
+import { NavLink } from 'react-router-dom'
+import './css/neofetch.css'
 
 export function NeoFetch() {
 
@@ -189,6 +190,25 @@ export function NeoFetch() {
 
                 </div>
 
+            </section>
+
+            <section className="changelog">
+
+                <div className='project-card'>
+                    <h2>Documentacion</h2>
+
+                    <p>
+                        Puedes revisar la forma de implementar la 
+                        libreria aqui
+                    </p>
+
+                    <NavLink
+                        className="project0-link"
+                        to="/neofetch/documentacion"
+                    >
+                        Ver más →
+                    </NavLink>
+                </div>
             </section>
 
         </div>

@@ -3,11 +3,12 @@ import { Home } from "../pages/home";
 import { MainLayout } from "../layouts/mainLayout";
 import { Projects } from "../pages/projects";
 import { Raccoon } from "../pages/raccoon";
-import { NeoFetch } from "../pages/neofetch";
+import { NeoFetch } from "../pages/neofetch/neofetch";
 import { Steve } from "../pages/steve";
-import { RacoonChangeLog } from "../pages/racoonChangeLog";
+import { RacoonChangeLog } from "../pages/racoon/racoonChangeLog";
 import { RacoonDownload } from "../pages/racoon/download";
 import { RacoonAbout } from "../pages/racoon/about";
+import { MainRacoon } from "../pages/racoon/main";
 
 export function MainRouter() {
 
@@ -17,7 +18,7 @@ export function MainRouter() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/racoon" element={<Raccoon />} />
+                    <Route path="/racoon" element={<MainRacoon />} />
                     <Route path="/racoon/changelog" element={<RacoonChangeLog />} />
                     <Route path="/racoon/download" element={<RacoonDownload />} />
                     <Route path="/racoon/about" element={<RacoonAbout />} />
