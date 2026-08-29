@@ -227,7 +227,7 @@ export function Raccoon() {
                     </div>
                 </section>
 
-                <section className="changelog">
+                <section className="changelog-raccoon">
 
                     <div className="changelog-card">
 
@@ -254,7 +254,7 @@ export function Raccoon() {
 
                 </section>
 
-                <section className="changelog">
+                <section className="changelog-raccoon">
 
                     <div className="project-card">
 
@@ -274,7 +274,7 @@ export function Raccoon() {
 
                 </section>
 
-                <section className="changelog">
+                <section className="changelog-raccoon">
 
                     <div className="project-card">
 
