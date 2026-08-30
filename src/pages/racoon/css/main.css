@@ -1,3 +1,216 @@
+.app {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+
+.background-grid {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.glow {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  filter: blur(140px);
+
+  opacity: .13;
+
+  pointer-events: none;
+}
+
+
+.glow-purple {
+  top: -300px;
+  left: 15%;
+
+  background: var(--purple);
+}
+
+
+.glow-blue {
+  top: 300px;
+  right: -300px;
+
+  background: var(--blue);
+}
+
+.hero {
+  position: relative;
+
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+
+  padding-top: 110px;
+
+  padding-bottom: 100px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.hero-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 7px 12px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.025);
+
+  color: #aaaab4;
+
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #4ade80;
+
+  box-shadow: 0 0 10px #4ade80;
+}
+
+
+h1 {
+  margin: 24px 0 20px;
+
+  font-size: clamp(54px, 6vw, 82px);
+
+  line-height: .98;
+
+  letter-spacing: -4px;
+
+  font-weight: 800;
+}
+
+
+h1 span {
+  background: linear-gradient(
+    110deg,
+    #ffffff,
+    #a78bfa
+  );
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+
+.hero-description {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.download-racoon {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform .2s;
+}
+
+.download-racoon:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  padding: 13px 18px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 9px;
+
+  background: rgba(255,255,255,.03);
+
+  color: #ddd;
+
+  font-size: 14px;
+}
+
+.hero-meta {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 30px;
+
+  color: #62626c;
+
+  font-size: 11px;
+}
+
+
 .racoon-container{
     max-width: 1100px;
     margin: 0 auto;
