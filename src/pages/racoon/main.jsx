@@ -10,37 +10,80 @@ export function MainRacoon() {
 
     return (
         <>
-            <ParticlesSnakeRacional>
-                <div className="racoon-container">
-                    <section className="hero-main">
-                        <div className="hero-text">
-                            <h1>Racoon</h1>
-                            <p className="version">v1.23.15 latest</p>
+            <div className="app">
 
-                            <h2>Cliente REST ligero y nativo</h2>
+                {/* Background effects */}
+                <div className="background-grid" />
+                <div className="glow glow-purple" />
+                <div className="glow glow-blue" />
 
-                            <p className="description">
+                <main>
+
+                    <section className="hero">
+
+                        <div className="hero-content">
+
+                            <div className="badge">
+                                <span className="status-dot" />
+                                Creado por desarrolladores
+                            </div>
+
+                            <h1>
+                                Racoon
+                                <br />
+                                <span>v1.23.15 latest.</span>
+                            </h1>
+
+                            <p className="hero-description">
                                 Una alternativa GNU simple para probar APIs REST.
                                 Rápido, ligero y enfocado en lo esencial.
                             </p>
 
-                            <a
-                                href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn-primary"
-                            >
-                                Descargar
-                            </a>
+                            <div className="hero-actions">
+
+                                <a
+                                    href='https://github.com/SteveBartmoss/projectRacoon/releases/tag/v1.0.0'
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="download-racoon"
+                                >
+                                    Descargar
+                                </a>
+
+                                <a
+                                    href='https://github.com/SteveBartmoss/projectRacoon'
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="secondary-button"
+                                >
+                                    View on GitHub
+                                </a>
+
+                            </div>
+
+                            <div className="hero-meta">
+                                <span>Open source</span>
+                                <span>•</span>
+                                <span>Cross-platform</span>
+                                <span>•</span>
+                                <span>Developer first</span>
+                            </div>
+
                         </div>
 
-                        <div className="hero-image">
-                            <img src={raccoonImg} alt="Racoon App" />
+
+                        {/* Hero preview */}
+                        <div className="hero-preview">
+                            <div className="div-img-raccoon">
+                                <img className="img-raccoon" src={raccoonImg} alt="Raccoon App" />
+                            </div>
                         </div>
 
                     </section>
-                </div>
-            </ParticlesSnakeRacional>
+
+                </main>
+
+            </div>
 
             <div className="racoon-container">
 
@@ -276,24 +319,24 @@ export function MainRacoon() {
 
                 <section className="changelog">
 
-                <div className="project-card">
+                    <div className="project-card">
 
-                    <h2>Acerca del proyecto</h2>
+                        <h2>Acerca del proyecto</h2>
 
-                    <p className="project-description">
-                        Si te interesa saber mas acerda de este
-                        busca aqui
-                    </p>
+                        <p className="project-description">
+                            Si te interesa saber mas acerda de este
+                            busca aqui
+                        </p>
 
-                    <NavLink
-                        className="project-link"
-                        to="/racoon/about"
-                    >
-                        Ver más →
-                    </NavLink>
-                </div>
+                        <NavLink
+                            className="project-link"
+                            to="/racoon/about"
+                        >
+                            Ver más →
+                        </NavLink>
+                    </div>
 
-            </section>
+                </section>
 
 
             </div>
