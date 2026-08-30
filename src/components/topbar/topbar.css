@@ -1,3 +1,91 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: min(var(--max-width), calc(100% - 48px));
+    height: 68px;
+    margin: 28px auto 0;
+    padding: 0 14px 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--purple);
+    border-radius: 12px;
+    background: rgba(8, 11, 9, 0.72);
+    backdrop-filter: blur(18px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+
+.logo-mark {
+    color: var(--green);
+    font-size: 21px;
+}
+
+
+.logo-accent {
+    color: var(--green);
+}
+
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+
+.navbar nav a {
+    color: #727b74;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: 0.25s ease;
+}
+
+
+.navbar nav a:hover {
+    color: var(--green);
+}
+
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 17px;
+    border: 1px solid rgba(168, 255, 176, 0.2);
+    border-radius: 7px;
+    color: var(--green);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    transition: 0.25s ease;
+}
+
+
+.nav-button:hover {
+    background: rgba(168, 255, 176, 0.08);
+
+    border-color: rgba(168, 255, 176, 0.4);
+}
+
+
+
 /* CONTENEDOR */
 .topbar {
     position: sticky;
