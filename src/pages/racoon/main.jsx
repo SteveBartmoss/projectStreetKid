@@ -6,6 +6,35 @@ import rustImg from '../../assets/rust-logo.svg'
 import tauriImg from '../../assets/tauri.png'
 import { NavLink } from 'react-router-dom'
 
+function Feature({
+  icon,
+  title,
+  description
+}) {
+  return (
+    <div className="feature-card">
+
+      <div className="feature-icon">
+        {icon}
+      </div>
+
+      <h3>
+        {title}
+      </h3>
+
+      <p>
+        {description}
+      </p>
+
+      <div className="feature-arrow">
+        →
+      </div>
+
+    </div>
+  );
+}
+
+
 export function MainRacoon() {
 
     return (
@@ -77,6 +106,101 @@ export function MainRacoon() {
                             <div className="div-img-raccoon">
                                 <img className="img-raccoon" src={raccoonImg} alt="Raccoon App" />
                             </div>
+                        </div>
+
+                    </section>
+
+                    <section className="trusted">
+
+                        <p>
+                            PARA DESARROLLADORES DE UN DESARROLLADOR
+                        </p>
+
+                        <div className="trusted-items">
+                            <span>REST APIs</span>
+                            <span>GraphQL</span>
+                            <span>WebSockets</span>
+                            <span>HTTP</span>
+                            <span>JSON</span>
+                        </div>
+
+                    </section>
+
+                    {/* Features */}
+                    <section
+                        id="features"
+                        className="features"
+                    >
+
+                        <div className="section-heading">
+
+                            <div className="small-label">
+                                SIMPLE PERO POTENTE
+                            </div>
+
+                            <h2>
+                                Todo lo que necestias.
+                                <br />
+                                Nada que no quieres.
+                            </h2>
+
+                            <p>
+                                Raccoon ofrece lo necesario para trabajar con APIs sin vender tu informacion.
+                            </p>
+
+                        </div>
+
+
+                        <div className="feature-grid">
+
+                            <Feature
+                                icon="↗"
+                                title="Fast native HTTP client"
+                                description="Send requests, inspect responses and debug your APIs with a clean and intuitive interface."
+                            />
+
+                            <Feature
+                                icon="▱"
+                                title="Status, response time and size"
+                                description="Organize your endpoints into collections and keep your projects structured."
+                            />
+
+                            <Feature
+                                icon="⌘"
+                                title="JSON viewer"
+                                description="Switch between development, staging and production with ease."
+                            />
+
+                            <Feature
+                                icon="◷"
+                                title="Minimal UI"
+                                description="Quickly find and replay requests you've already made."
+                            />
+
+                            <Feature
+                                icon="{}"
+                                title="Sistema de ventanas"
+                                description="Edit and inspect JSON payloads with syntax highlighting."
+                            />
+
+                            <Feature
+                                icon="⚡"
+                                title="Fast"
+                                description="Designed to stay responsive even when you're working with large APIs."
+                            />
+
+                            <Feature
+                                icon="▱"
+                                title="Auth"
+                                description="Organize your endpoints into collections and keep your projects structured."
+                            />
+
+                            <Feature
+                                icon="▱"
+                                title="Parámetros dinámicos"
+                                description="Organize your endpoints into collections and keep your projects structured."
+                            />
+
                         </div>
 
                     </section>
