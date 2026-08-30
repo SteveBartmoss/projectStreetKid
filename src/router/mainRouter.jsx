@@ -9,6 +9,7 @@ import { RacoonChangeLog } from "../pages/racoon/racoonChangeLog";
 import { RacoonDownload } from "../pages/racoon/download";
 import { RacoonAbout } from "../pages/racoon/about";
 import { MainRacoon } from "../pages/racoon/main";
+import Racoonv2 from "../pages/racoon/racoonv2";
 
 export function MainRouter() {
 
@@ -18,7 +19,7 @@ export function MainRouter() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/racoon" element={<MainRacoon />} />
+                    <Route path="/racoon" element={<Racoonv2 />} />
                     <Route path="/racoon/changelog" element={<RacoonChangeLog />} />
                     <Route path="/racoon/download" element={<RacoonDownload />} />
                     <Route path="/racoon/about" element={<RacoonAbout />} />
