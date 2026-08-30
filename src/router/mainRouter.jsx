@@ -19,7 +19,8 @@ export function MainRouter() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/racoon" element={<Racoonv2 />} />
+                    <Route path="/racoon" element={<MainRacoon />} />
+                    <Route path="/racoon2" element={<Racoonv2 />} />
                     <Route path="/racoon/changelog" element={<RacoonChangeLog />} />
                     <Route path="/racoon/download" element={<RacoonDownload />} />
                     <Route path="/racoon/about" element={<RacoonAbout />} />
