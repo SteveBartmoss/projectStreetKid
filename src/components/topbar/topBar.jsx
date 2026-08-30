@@ -4,36 +4,44 @@ import './topbar.css'
 export function TopBar() {
 
     return (
-        <header className="topbar">
+
+        <header className="navbar">
 
             <div className="topbar-container">
 
                 <NavLink to="/" className="logo">
-                    Steve Bartmoss
+                    <span className="logo-mark">
+                        ◇
+                    </span>
+
+                    <span>
+                        Steve<span className="logo-accent">.</span>Bartmoss
+                    </span>
+                    
                 </NavLink>
 
                 <nav className="nav">
-                    <NavLink 
-                        to="/projects" 
-                        className={({ isActive }) => 
+                    <NavLink
+                        to="/projects"
+                        className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
                         Proyectos
                     </NavLink>
 
-                    <a 
-                        href="https://github.com/SteveBartmoss" 
-                        target="_blank" 
+                    <a
+                        href="https://github.com/SteveBartmoss"
+                        target="_blank"
                         rel="noreferrer"
                         className="nav-button"
                     >
                         GitHub
                     </a>
 
-                    <NavLink 
-                        to="/steve" 
-                        className={({ isActive }) => 
+                    <NavLink
+                        to="/steve"
+                        className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                     >
